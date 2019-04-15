@@ -22,7 +22,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { PricingComponent } from './pricing/pricing.component';
 
-
 @NgModule({
     imports: [
         CommonModule,

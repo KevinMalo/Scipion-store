@@ -1,3 +1,4 @@
+import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -17,7 +18,8 @@ import { PresentationModule } from './presentation/presentation.module';
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent
     ],
     imports: [
         BrowserAnimationsModule,
