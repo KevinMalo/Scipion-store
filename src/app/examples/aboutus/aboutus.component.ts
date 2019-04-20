@@ -29,12 +29,12 @@ export class AboutusComponent implements OnInit, OnDestroy {
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.add('navbar-transparent');
         this.dropdownList = [
-                              {"id":1,"itemName":"I'm a Designer"},
-                              {"id":2,"itemName":"I'm a Developer"},
-                              {"id":3,"itemName":"I'm a Hero"}
+                              {"id":1,"itemName":"Soy un Diseñador"},
+                              {"id":2,"itemName":"Soy un Desarrollador"},
+                              {"id":3,"itemName":"Soy un Héroe"}
                             ];
         this.selectedItems = [
-            {"id":2,"itemName":"I'm a Developer"}
+            {"id":2,"itemName":"Soy un Desarrollador"}
         ];
         this.dropdownSettings = {
                                   singleSelection: true,
