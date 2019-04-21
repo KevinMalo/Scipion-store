@@ -10,6 +10,8 @@ export class LandingComponent implements OnInit {
   focus;
   focus1;
 
+  data : Date = new Date();
+
   constructor() { }
 
   ngOnInit() {

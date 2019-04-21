@@ -9,6 +9,8 @@ import * as Rellax from 'rellax';
 export class ProductpageComponent implements OnInit {
     data : Date = new Date();
 
+    focus1;
+
     dropdownList = [];
     selectedItems = [];
     dropdownSettings = {};

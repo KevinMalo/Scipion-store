@@ -1,3 +1,4 @@
+import { CommonModule, APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgModule } from '@angular/core';
@@ -10,7 +11,6 @@ import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
-import { PresentationComponent } from './presentation/presentation.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 import { PresentationModule } from './presentation/presentation.module';
@@ -32,7 +32,10 @@ import { PresentationModule } from './presentation/presentation.module';
         ComponentsModule,
         ExamplesModule
     ],
-    providers: [],
+    providers: [
+        { provide: APP_BASE_HREF, useValue: '/' },
+        { provide: LocationStrategy, useClass: HashLocationStrategy }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
